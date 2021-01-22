@@ -1,0 +1,24 @@
+/* 如果想要讓所有元素都使用 box-sizing: border-box，
+最常見的作法是在 html 元素上設定 box-sizing 屬性，
+而所有其他元素則是使用 inherit 這個關鍵字來繼承該值： */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* root font size */
+/* we use 'rem' to deckare the value cuz it depend on the doot
+If we use 'em', it depend on the parent, it is so confused and diffcult to calculate */
+html {
+    /* Body font-size = (62.5/100)*16 = 10px remember this one */
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
