@@ -18,7 +18,7 @@ html {
     font-size: 62.5%; // 1rem = 10px
 
     @include respond(phone) {
-        font-size: 30%; // 1rem = 4.8px, 4.8/16 = 30%
+        font-size: 46%; // 1rem = 7.36px, 7.36/16 = 46%
     }
 
     @include respond(tab-port) {
@@ -37,5 +37,17 @@ html {
 
 body {
     box-sizing: border-box;
+    padding: 3rem;
+}
+
+html,body
+{
+    overflow-x: hidden; 
+}
+
+/* The background color of text when user selects */
+::selection {
+    background-color: red;
+    color: white;
 }
 
