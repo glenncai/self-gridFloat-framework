@@ -60,6 +60,8 @@ another example:
 
 Safari doesn't not support `min-resolution`, so we need to use `-webkit-min-device-pixel-ratio` instead.
 
+<img src="img/3.png" width="100%">
+
 ```css
 /*1.25 dpr*/
 @media
